@@ -2,6 +2,7 @@ import { Routes, Route, Outlet } from 'react-router-dom'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
+import MainLayout from '../layouts/MainLayout'
 
 function MainRoutes() {
   return (
@@ -9,10 +10,9 @@ function MainRoutes() {
       <Routes>
         <Route
           element={
-            <div>
-              <h1>Main Route</h1>
+            <MainLayout>
               <Outlet />
-            </div>
+            </MainLayout>
           }
         >
           <Route path='/' element={<Home />} />
