@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import MainRoutes from './routes/MainRoutes'
 import DefaultRoutes from './routes/DefaultRoutes'
+import '@radix-ui/themes/styles.css'
 
 function App() {
   const [count, setCount] = useState(0)
